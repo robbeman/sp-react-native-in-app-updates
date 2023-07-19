@@ -47,6 +47,12 @@ export type CheckOptions = {
    * ISO 3166-1 country code (iOS only)
    */
   country?: string;
+  /**
+   * Check for a specific bundle id (iOS only)
+   * 
+   * Defaults to `DeviceInfo.getBundleId()`
+   */
+  bundleId?: string;
 };
 
 export type SemverVersion = string;
