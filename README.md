@@ -108,6 +108,7 @@ Where:
 |  toSemverConverter | (optional) Function  |  This will run right after the store version is fetched in case you want to change it before it's compared as a semver |
 |  customVersionComparator | (optional) Function  | By default this library uses `semver` behind the scenes to compare the store version with the `curVersion` value, but you can pass your own version comparator if you want to |
 |  country (iOS only) | (optional) String  | default `undefined`, it will filter by country code while requesting an update, The value should be [ISO 3166-1 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) |
+|  bundleId (iOS only) | (optional) String  | default `DeviceInfo.getBundleId()`, check for updates against a specific bundle id, usefull for testing/development |
 
 and `NeedsUpdateResponse`:
 
